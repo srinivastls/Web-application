@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<header >
+
+<h1 class="liketext">THE ULTIMATE CHAMPIONSHIP</h1>
+
+
+</header>
+
+<div class="row">
+	<nav>
+		<div class="menu-icon">
+			
+		</div>
+		<ul>
+			<li><a href="#" style="color:red;">Add Sports</a></li>
+			<li><a href="editsports.php">Edit sports</a></li>
+			<li><a href="Reports.php">Reports</a></li>
+			<li><a href="deletesport.php">Delete</a></li>
+		
+		
+			<a href ="index.html">
+				<input type="button" value="Logout" class="logout"></a>
+		</ul>
+		
+	</nav>
+               
+<div class="col-12">
+<div class="cont" style="padding-left:2%;width:100%;border-style:solid; border-radius:10px;border-color:#ffffff">
+  <center><h1>Add Events</h1></center>                          
+
+<form action="addsports.php" method="post"  autocomplete="off" enctype="multipart/form-data">
+	<ul>
+Event name: &ensp;
+
+<input type="text" name="ename" required class="smalltext">
+<br>
+	Description: &ensp;
+<input type="text" name="description" required class="bigtext"><br><br>
+	Start Date: &emsp; 
+<input type="date" name="start_date" required class="smalltext">
+	End Date:  
+<input type="date" name="end_date" required class="smalltext"><br><br>
+	
+	<label for="status">Registration Status:</label>
+
+	<select name="status" id="status" required class="smalltext">
+	  <option value="Started">Started</option>
+	  <option value="Ended">Ended</option>
+	</select>
+	&emsp;
+<label for="image">Image : </label>
+      <input type="file" name="image" id = "image" accept=".jpg, .jpeg, .png" value=""  required class="smalltext" > <br> <br>
+
+<center>
+	<input type="submit" name="submit"></center>
+</form>
+</ul>
+</div>
+
+</div>
+
+
+</div>
+
+</body>
+</html>

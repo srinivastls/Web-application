@@ -1,0 +1,36 @@
+li{
+    color: rgb(56, 56, 56);
+    font-family: 'Acme', sans-serif;
+    list-style: none;
+    margin-left: 7%;
+    font-size: 25px;
+    line-height: 50px;
+}
+li:before{
+    content: "\2736";
+}
+.tab,tr,td{
+    border: 5px black;
+    border-style:groove;
+    border-collapse: collapse;
+    font-weight: 500;
+    font-size: medium;
+    width:1000px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    color:rgb(0, 0, 0);
+    background-color: rgba(70, 59, 59, 0.068) ;
+}
+.card{
+    background-color: rgba(196, 228, 226, 0.342);
+    backdrop-filter: blur(10px);
+    width: 85rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3%;
+    border-width: 0px;
+    border-color: black;
+    box-shadow: 0px 0px 10px inset;
+    height: 680px;
+}

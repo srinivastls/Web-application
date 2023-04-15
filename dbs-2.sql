@@ -1,0 +1,16 @@
+show databases;
+create database dbsproject;
+use dbsproject;
+show tables;
+drop table login;
+drop table player;
+drop table team;
+drop table captain;
+drop table sport;
+create table login(Username varchar(50), Password varchar(20));
+select * from login;
+alter table login add primary key (Username);
+create table player(SportName varchar(20), PlayerName varchar(30), Email varchar(50), RollNumber varchar(10), CaptainRNo varchar(10),primary key(RollNumber,SportName));
+create table team(SportName varchar(20), TeamName varchar(30) primary key, CaptainName varchar(20));
+create table captain(Name varchar(20), MailID varchar(30) primary key, RollNo varchar(10), Phone bigint, Password varchar(20));
+create table sport(SportName varchar(20) primary key, Description varchar(100), StartDate date, EndDate date, Status varchar(10), Image varchar(60));

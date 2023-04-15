@@ -1,0 +1,146 @@
+.logo{
+    font-family: 'Quantico', sans-serif;
+    
+}
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+.create{
+    font-family: 'Bungee Shade', cursive;
+    position: relative;
+    margin-top: 4%;
+    margin-left: 6%;
+    font-size: 50px;
+    font-weight:900;
+    color:#debd3b;
+}
+.nav-bar{
+    background: #0082e6;
+    height : 60px;
+    width:100%;
+}
+.logo{
+    color:white;
+    font-size:35px;
+    line-height:60px;
+    padding:0 100px;
+    font-weight: bolder;
+}
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 60px;
+    margin: 0 10px;
+}
+nav ul li a{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    color: white;
+    padding: 7px 13px;
+    font-size: larger;
+}
+.nav-bar-items:hover{
+    background: #1b9bff;
+    border-radius: 3px;
+    transition: .5s; 
+}
+.checkbtn{
+    font-size:30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}    
+
+
+@media (max-width: 952px){
+    label.logo{
+        font-size: 30px;
+        padding-left : 50px;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 1130px){
+    .checkbtn{
+        display: block;
+    }
+
+    ul{
+        position: fixed;
+        width:fit-content;
+        height: 100vh;
+        background: #2c3e50;
+        top: 80px;
+        left: -100%;
+        transition: all 0.5s;
+    }
+
+    nav ul li{
+        display: block;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    a:hover,a.active{
+        background: none;
+        color: #ffffff;
+    }
+    #check:checked ~ ul{
+    left:0
+    }
+}
+.card{
+    position: absolute;
+    margin-top: 10%;
+    margin-left:40%;
+    margin-top: 7%;
+    overflow: hidden;
+    background-color: #838484;
+    transform: scale(1.2);
+}
+.card:hover .card-img-top{  
+    transform: scale(1.19);
+    transition : transform 0.75s;
+    filter: blur(1px);
+}
+.card-img-top{
+    display: block;
+    position: relative;
+    background-color: #c2c2c2;
+}
+.km{
+    display: none;
+}
+.card:hover .km{
+    display: inline-block;
+    position: absolute;
+    width: 120px;
+    height: 50px;
+    font-size: large;
+    font-weight: 500;
+    border-radius: 10px;
+    box-shadow: 0px 0px 2px inset;
+    top:29%;
+    left:30%;
+    z-index: 1;
+    text-transform: uppercase;
+    font-size: 16px;
+
+}
